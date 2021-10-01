@@ -3,11 +3,11 @@ class School:
     teachers = 30
     def updateTeachers(self):
         self.teachers+=10
-        return self.teachers
+        print(self.teachers)
     
     def updateRooms(self):
         self.rooms+=20
-        return self.rooms
+        print(self.rooms)
     
     def __init__(self, rooms, school_name):
        self.rooms = rooms
@@ -22,5 +22,7 @@ school2 = School(150, "All Indian School")
 school1.Intro()
 school2.Intro()
 
-teachers.updateTeachers()
-rooms.updateRooms()
+school1.updateTeachers()
+school2.updateTeachers()
+school1.updateRooms()
+school2.updateRooms()
